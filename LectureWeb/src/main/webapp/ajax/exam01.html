@@ -47,6 +47,7 @@ $(document).ready(function(){
 			, success:function(data){
 		/* 		alert('data') */
 				$('#msgView').append(data)
+				$('#msgView1').val(data)
 			},error:function(){ //없는 파일을 url에 쓰면은 실패 뜸 
 				alert('실패')
 			}
@@ -74,7 +75,9 @@ $(document).ready(function(){
 <body>
 	<h2>서버에서 받은 메세지</h2>
  	<div id="msgView"></div>
- 		<h3>Hello Ajax!!</h3> 
+ 		<h3>Hello Ajax!!</h3>
+ 	<textarea rows="10" cols="80" id="msgView1"></textarea><br>	
+ 		 
  		<!-- 화면의 일부분을 수정하고 싶음  html을 다 가져오지 않음 hello Ajax 저게 들어오게 하고 싶어! --> 
  	<button>서버에 자료 요청</button>
 

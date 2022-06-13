@@ -107,7 +107,7 @@ checked exception인데 왜 try catch 안쓰지? -> jsp 가 내부적으로는 s
 					<td>
 						<a href="detail.jsp?no=${ board.no }">
 						<%--  ${board.title } --%>
-						<c:out value="${ board.title }"/>
+						 <c:out value="${ board.title }"/> 
 						</a>
 						<!--몇번 게시물을 볼 지 써주어야함 1번인지 2번인지 3번인지 알고 있어야 함. 제일 먼저 해석은 부터 해석하므로 해서이 가능하다! 소스보기로 한번 보자! 그러면 {}부분 숫자로 바뀌어 있음 실제 원래 코드는 안보임 우리가 볼때만 숫자로 보임 그래서 보안이 좋다고 얘기함. 순수 jsp코드는 안보이더라~!   -->
 						<!--화면에 출력하는 방식을 out태그를 이용해서 해주자~!   -->

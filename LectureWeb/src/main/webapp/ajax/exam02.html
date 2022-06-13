@@ -30,8 +30,8 @@ $(document).ready(function(){
 	
 		// post방식으로 나 보낼거야~ 하는 거임 이런것도 있다~
 		//두번째 위치에는 parameter를 정의함.
-	$.post('param.jsp',"name=hong&age=30",function(result){ //이렇게 쓰면 직접 정보를 내가 보내는것임 
-		$('#msgView').val(result) // result를 받아와서 그걸 찍어달라는 의미. 밑에 ajax를 좀 더 간단한 코드로 전송할 수 있다~! 
+	/* $.post('param.jsp',"name=hong&age=30",function(result){ //이렇게 쓰면 직접 정보를 내가 보내는것임 
+		$('#msgView').val(result) */ // result를 받아와서 그걸 찍어달라는 의미. 밑에 ajax를 좀 더 간단한 코드로 전송할 수 있다~! 
 		//데이터 넘겨야함 
 		//json형식으로도 보낼 수 있음 
 	//$.post('param.jsp',{name:hong,age:22},function(result){
@@ -44,7 +44,7 @@ $(document).ready(function(){
 	//$.post('param.jsp',{name:hong,age:22},function(result){
 		
 		
-	})
+	/* }) */
 		
 		$.ajax({
 		url:'param.jsp' //jsp 파일을 요청해서 내가 받을 것이다! tomcat server에다가 지금 통신중임 wtpwebapps에 있는 param.jsp를 찾는 것임.
@@ -75,8 +75,7 @@ $(document).ready(function(){
 	
 	
 	
-	
-})
+	})
 </script>
 
 
